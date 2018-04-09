@@ -10,6 +10,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn import metrics
 import numpy as np
 from matplotlib import pyplot as plt
+import seaborn as sns
 
 # Read data from file
 customers = pd.read_csv('Ecommerce Customers')
@@ -53,3 +54,8 @@ print('Mean Squared Error: {}'.format(
     metrics.mean_squared_error(y_test, predictions)))
 print('Mean Squared Error: {}'.format(
     np.sqrt(metrics.mean_squared_error(y_test, predictions))))
+print('Expalined Variance Score: {}'.format(
+    metrics.explained_variance_score(y_test, predictions)))
+
+# Plot a histogram of residuals and make sure it looks uniformly distributed
+sns.distplot((y_test - predictions), bins=50)
