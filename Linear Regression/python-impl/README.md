@@ -1,0 +1,2 @@
+### Company should focus more on their mobile app or on their website?
+This is tricky, there are two ways to think about this: Develop the Website to catch up to the performance of the mobile app, or develop the app more since that is what is working better. This sort of answer really depends on the other factors going on at the company, we would probably want to explore the relationship between Length of Membership and the App or the Website before coming to a conclusion!
